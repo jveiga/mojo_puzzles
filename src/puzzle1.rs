@@ -1,7 +1,7 @@
 use cubecl::prelude::*;
 use cubecl::server::Handle;
 
-pub(crate) fn add_10<R: Runtime>(device: &R::Device, input: Vec<f32>) -> Vec<f32> {
+pub fn add_10<R: Runtime>(device: &R::Device, input: Vec<f32>) -> Vec<f32> {
     let client = R::client(device);
     let input = &input;
     let len = input.len();
