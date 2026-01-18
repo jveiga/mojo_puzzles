@@ -1,0 +1,11 @@
+[package]
+name = "mojo_puzzles"
+edition = "2024"
+
+[features]
+default = []
+cpu = []
+cuda = []
+
+[dependencies]
+cubecl = { version = "0.9.0", features = ["cpu", "cuda"] }
