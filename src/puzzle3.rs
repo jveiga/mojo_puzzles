@@ -43,7 +43,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_zip_add() {
+    fn test_guards() {
         assert_eq!(
             guards::<cubecl::cuda::CudaRuntime>(&Default::default(), vec![5, 6, 7, 8]),
             vec![15, 16, 17, 18],
